@@ -5,7 +5,7 @@
 DROP DATABASE IF EXISTS clinic_management;
 CREATE DATABASE clinic_management CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE clinic_management;
-
+  
 --
 -- Table for user accounts (admin, doctor, patient)
 --
@@ -95,3 +95,13 @@ INSERT INTO `users` (`username`, `password`, `role`) VALUES ('dr_jovitha', '05',
 INSERT INTO `doctors` (`user_id`, `name`, `specialty`) VALUES (LAST_INSERT_ID(), 'Jovitha', 'General');
 
 -- --- END OF SCRIPT ---
+
+
+This project requires the following external Java libraries (.jar files) to be included in the build path:
+
+* LGoodDatePicker:`LGoodDatePicker-11.2.1.jar`
+* Apache Commons CSV:`commons-csv-1.10.0.jar`
+* FlatLaf (Look and Feel):`flatlaf-3.4.1.jar`
+* JFreeChart:`jfreechart-1.5.4.jar`
+* MySQL Connector/J:`mysql-connector-j-9.4.0.jar`
+* OpenPDF:`openpdf-1.3.30.jar`
